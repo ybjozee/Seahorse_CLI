@@ -37,13 +37,13 @@ fn base_action() -> fn(&Context) {
         );
         println!("{}", r#"
         Example Usage
-        cipher_cli encrypt Welcome to the hallowed chambers --algorithm=caesar --key=54
 
-        cipher_cli encrypt Welcome to the hallowed chambers --algorithm=bacon
+        cipher_cli encrypt Welcome to the hallowed chAmbers!  --algorithm=caesar --rotations=54
 
-        cipher_cli decrypt AABAAABBABABAABABBBABBAAA --algorithm=bacon
+        cipher_cli encrypt Welcome to the hallowed chambers! --algorithm=bacon
 
-        cipher_cli decrypt fff.jkl.gh --algorithm=caesar --key=87
+        cipher_cli decrypt Ygneqog vq vjg jcnnqygf ejCodgtu! --algorithm=caesar --rotations=54
+
         "#.blue())
     }
 }
